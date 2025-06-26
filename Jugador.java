@@ -1,15 +1,17 @@
+import java.util.List;  
+
 public class Jugador{
     //atributos
     private int id;
     private String nombre;
     private int dinero;
-    private List<propiedad> propiedades;
+    private List<Propiedad> propiedades;
     private int posicionActual;
     private boolean estaEnCarcel;
     private int totalCartasSalirCarcel;
     //fin atributos
     //constructor
-    public Jugador(int id,String nombre,int dinero, List<propiedad> propiedades, int posicionActual, boolean estaEnCarcel, int totalCartasSalirCarcel){
+    public Jugador(int id,String nombre,int dinero, List<Propiedad> propiedades, int posicionActual, boolean estaEnCarcel, int totalCartasSalirCarcel){
         this.id=id;
         this.nombre=nombre;
         this.dinero=dinero;
@@ -31,7 +33,7 @@ public class Jugador{
     public int getDinero(){
         return dinero;
     }
-    public List<propiedad> getPropiedades(){
+    public List<Propiedad> getPropiedades(){
         return propiedades;
     }
     public int getPosicionActual(){
