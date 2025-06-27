@@ -5,4 +5,5 @@ public class Hotel extends Propiedad{
         super(id, nombre, precio, renta, duenno, casas, estaHipotecada);
         this.esHotel=esHotel;
     }
+    
 }
