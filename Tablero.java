@@ -18,8 +18,8 @@ public class Tablero{
     public List<Carta> getCartas(){
         return cartas;
     }
-
-
+/*esto es solo para paoder subir un comit
+ */
 
 
 }
