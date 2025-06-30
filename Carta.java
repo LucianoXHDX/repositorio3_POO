@@ -20,5 +20,5 @@ public abstract class Carta{
     }
     //jugador va a mantener los metodos para que lso modifique
     public abstract void accion(Jugador jugador);
-    /*subir al comiiittt */
+    /*subir al comiiitttcd */
 }
