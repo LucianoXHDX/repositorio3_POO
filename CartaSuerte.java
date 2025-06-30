@@ -4,9 +4,9 @@ public class CartaSuerte extends Carta{
         super(id,descripcion,nombre);
 
     }
-    @override
+    @Override
     public void accion(Jugador jugador){
-        System.out.printnl("hola aca debe ir lo que hace con ungerr");
+        System.out.println("hola aca debe ir lo que hace con ungerr");
         
             //aca debe ir lo que hace la carta
             //jugador.ganarDinero(222)

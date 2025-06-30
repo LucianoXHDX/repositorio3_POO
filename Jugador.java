@@ -23,33 +23,36 @@ public class Jugador{
     //fin constructor
 //METODOS
     //inicio de getters de todo
-    public int getId(){
+    public int getJugadorId(){
         return id;
     }
     //tal vez este no es necesario si no lo usas eliminalo
-    public String getNombre(){
+    public String getJugadorNombre(){
         return nombre;
     }
-    public int getDinero(){
+    public int getJugadorDinero(){
         return dinero;
     }
-    public List<Propiedad> getPropiedades(){
+    public List<Propiedad> getJugadorPropiedades(){
         return propiedades;
     }
-    public int getPosicionActual(){
+    public int getJugadorPosicionActual(){
         return posicionActual;
     }
-    public boolean getEstaEnCarcel(){
+    public boolean getJugadorEstaEnCarcel(){
         return estaEnCarcel;
     }
-    public int getTotalCartasSalirCarcel(){
+    public int getJugadorTotalCartasSalirCarcel(){
         return totalCartasSalirCarcel;
     }
 
 //fin metodos
 
 //inico setter
+    //mover jugador
+    /*public Jugador moverJugador(Jugador jugador){
 
+    }*/
 
 //fin setter
 }
