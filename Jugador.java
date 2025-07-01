@@ -45,14 +45,18 @@ public class Jugador{
     public int getJugadorTotalCartasSalirCarcel(){
         return totalCartasSalirCarcel;
     }
-
+    public void setJugadorSumaPosicion(int cantAvanzar){
+        this.posicionActual=posicionActual+cantAvanzar;
+    }
+   public void moverJugador(int posiciones) {
+    this.posicionActual += posiciones;
+    System.out.println("Jugador " + nombre + " avanza " + posiciones + " posiciones. Nueva posición: " + posicionActual);
+}
 //fin metodos
 
 //inico setter
     //mover jugador
-    /*public Jugador moverJugador(Jugador jugador){
-
-    }*/
+   
 
 //fin setter
 }

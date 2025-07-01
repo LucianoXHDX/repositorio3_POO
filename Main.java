@@ -2,11 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main{
+    private Juego juego;
+    
     public static void main(String[] args) {
     Main mainJuego = new Main();
     mainJuego.mainIniciarJuego();
-}
+    mainJuego.moverJugadorMain();
+   
+    //empezare un contador para el manejo de los turnos asi es una variable global y puedo usarla desde cualquie parte, lo pondra aca por mientra
+    //pero podria sacarlo en algun momento 
+    
+
+}   
+    
     public void mainIniciarJuego(){
+        
         System.out.println("-_-_-_-_-_-_INICIANDO EL  JUEGO -_-_");
         System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
         System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
@@ -20,9 +30,9 @@ public class Main{
     private int posicionActual;
     private boolean estaEnCarcel;
     private int totalCartasSalirCarcel; */
-        jugadores.add(new Jugador(1,"luc",12,null,0,false,0));
-        jugadores.add(new Jugador(2,"SO",112,null,0,false,0));
+        
 
+        //esto corresponde al agragar propiedades
 
         List<Propiedad> propiedades= new ArrayList<>();
         propiedades.add(new Propiedad(1,"Hola1",21,21,null,0,false));
@@ -59,10 +69,22 @@ public class Main{
         todasLasCartas.addAll(cartasSuerte);
         todasLasCartas.addAll(cartasComunidad);
          //Tablero tablero = new Tablero(casillasEspeciales, propiedades, todasLasCartas);
-         Juego juego= new Juego(jugadores,1000000,2,jugadores.get(0),3,3,3);
-        juego.juegoImprimirInformacion();
+        this.juego= new Juego(jugadores,1000000,2,null,3,3,3);
+        //agrego como jugador inicial al primer jugad
         
-
+        //juego agreagr jugadores modificara el turno actual
+        juego.juegoAgregarJugadores();
+        juego.setJuegoJugadorActual(juego.getJuegoListaJugadores().get(0));
+        juego.juegoImprimirInformacion();
+    
 
     }
+    public void moverJugadorMain() {
+        //debo ver el tema de que no se vaya a caer del mapa con el mood ojitoo
+    System.out.println("-_-_-_-_-_-Prueba Mover jugador-_-_-");
+    int resultadoDados = juego.juegoLanzarDado();
+    Jugador jugadorAMover=juego.getJuegoJugadorActual();
+    jugadorAMover.moverJugador(resultadoDados);
+    }      
+    
 }
