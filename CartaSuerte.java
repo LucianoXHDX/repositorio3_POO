@@ -1,9 +1,35 @@
+/*
+ * 
+ * COMENTADA CORRECTAMENTE
+ * 
+ */
+
+
+/**
+ * clase CartaSuerte representa las cartas de comunidad del juego CAPITALIA
+ * 
+ * Esta clase esta extendida de la clase abstracta Carta
+ */
+
+
 public class CartaSuerte extends Carta{
+    /**
+     * constructor de la carta de suerte
+     * @param id es el identificado de la carta comunidad
+     * @param descripcion es la descripcion de lo que hace la carta
+     * @param nombre es el nombre de la carta
+     * 
+     * 
+     */
  
     public CartaSuerte(int id, String descripcion,String nombre){
         super(id,descripcion,nombre);
 
     }
+     /**
+     * Es la sobre escritura del metodo accion que tiene la clase abstracta
+     * @param jugador es al jugador que se le aplicaran la accion de esta carta
+     */
     @Override
     public void accion(Jugador jugador){
         System.out.println("hola aca debe ir lo que hace con ungerr");
