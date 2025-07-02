@@ -6,13 +6,13 @@
 
 
 /**
- * clase CartaSuerte representa las cartas de comunidad del juego CAPITALIA
+ * clase CartaSuerteLucianoCarril_21117582 representa las cartas de comunidad del juego CAPITALIA
  * 
- * Esta clase esta extendida de la clase abstracta Carta
+ * Esta clase esta extendida de la clase abstracta CartaLucianoCarril_21117582
  */
 
 
-public class CartaSuerte extends Carta{
+public class CartaSuerteLucianoCarril_21117582 extends CartaLucianoCarril_21117582{
     /**
      * constructor de la carta de suerte
      * @param id es el identificado de la carta comunidad
@@ -22,7 +22,7 @@ public class CartaSuerte extends Carta{
      * 
      */
  
-    public CartaSuerte(int id, String descripcion,String nombre){
+    public CartaSuerteLucianoCarril_21117582(int id, String descripcion,String nombre){
         super(id,descripcion,nombre);
 
     }
@@ -31,7 +31,7 @@ public class CartaSuerte extends Carta{
      * @param jugador es al jugador que se le aplicaran la accion de esta carta
      */
     @Override
-    public void accion(Jugador jugador){
+    public void accion(JugadorLucianoCarril_21117582 jugador){
         System.out.println("hola aca debe ir lo que hace con ungerr");
         
             //aca debe ir lo que hace la carta

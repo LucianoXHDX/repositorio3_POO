@@ -123,7 +123,9 @@ public class JuegoLucianoCarril_21117582{
     public int getJuegoContadorTurnos(){
         return contadorDeTurnoJugados;
     }
-
+    public TableroLucianoCarril_21117582 getTablero() {
+    return this.tablero;
+}
     
     /**
      * esta funcion nos permite sumar uno al contador de turno

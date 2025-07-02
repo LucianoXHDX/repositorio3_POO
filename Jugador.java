@@ -6,19 +6,19 @@ import java.util.ArrayList;
 
 
 
-public class Jugador{
+public class JugadorLucianoCarril_21117582{
     //atributos
     private int id;
     private String nombre;
     private int dinero;
-    private List<Propiedad> propiedades;
+    private List<Integer> idsPropiedes;
     private int posicionActual;
     private boolean estaEnCarcel;
     private int totalCartasSalirCarcel;
     //fin atributos
     //constructor
     /**
-     * Es el constructor del Jugador
+     * Es el constructor del JugadorLucianoCarril_21117582
      * @param id identificador del jugador
      * @param nombre es el nombre del jugador
      * @param dinero es el dienro del jugador
@@ -26,11 +26,11 @@ public class Jugador{
      * @param estaEnCarcel es un booleano si esta o no en la carcel, falso si no esa en la carcel
      * @param totalCartasSalirCarcel es la cantidad de cartas que tiene para salir de al carcel
      */
-    public Jugador(int id,String nombre,int dinero, int posicionActual, boolean estaEnCarcel, int totalCartasSalirCarcel){
+    public JugadorLucianoCarril_21117582(int id,String nombre,int dinero, int posicionActual, boolean estaEnCarcel, int totalCartasSalirCarcel){
         this.id=id;
         this.nombre=nombre;
         this.dinero=dinero;
-        this.propiedades = new ArrayList<>(); 
+        this.idsPropiedes = new ArrayList<Integer>(); 
         this.posicionActual=posicionActual;
         this.estaEnCarcel=estaEnCarcel;
         this.totalCartasSalirCarcel=totalCartasSalirCarcel;
@@ -39,7 +39,7 @@ public class Jugador{
 //METODOS
     //inicio de getters de todo
     /**
-     *esta funcion devuelve el id del Jugador
+     *esta funcion devuelve el id del JugadorLucianoCarril_21117582
      * @return id
      */
     public int getJugadorId(){
@@ -64,8 +64,8 @@ public class Jugador{
      * esta funcion devuelve la lista de propiedades de los que el jugador es duenno
      * @return propiedades
      */
-    public List<Propiedad> getJugadorPropiedades(){
-        return propiedades;
+    public List<Integer> getJugadorPropiedades(){
+        return idsPropiedes;
     }
     /**
      * esta funcion devuelve la posicion actual del jugador
@@ -101,8 +101,8 @@ public class Jugador{
      * esta funcion agrega una id de propiedad a la lista de propiedades del jugador
      * @param propiedad
      */
-    public void setJugadorPropiedad(Propiedad propiedad){
-    this.propiedades.add(propiedad);
+    public void setJugadorPropiedad(int id){
+    this.idsPropiedes.add(id);
     }
   
     //sirve para hacer cambio segun un monto
@@ -116,7 +116,7 @@ public class Jugador{
     }
      public void moverJugador(int posiciones) {
     this.posicionActual += posiciones;
-    System.out.println("Jugador " + nombre + " avanza " + posiciones + " posiciones. Nueva posición: " + posicionActual);
+    System.out.println("JugadorLucianoCarril_21117582 " + nombre + " avanza " + posiciones + " posiciones. Nueva posición: " + posicionActual);
      }
     /**
      * Esta funcion devuelve toda la inforamcion del jugador, o sea imprime todos los atrubutos
@@ -124,7 +124,6 @@ public class Jugador{
      * 
      */
     public void imprimirInformacionJugador(){
-        //public Jugador(int id,String nombre,int dinero, List<Propiedad> propiedades, int posicionActual, boolean estaEnCarcel, int totalCartasSalirCarcel){
       System.out.println("El id Del jugador es:  " + getJugadorId());
         System.out.println("El nombre del jugador es:  "+getJugadorNombre() );
         System.out.println("El dinero del jugador es: "+ getJugadorDinero());
@@ -137,6 +136,7 @@ public class Jugador{
         System.out.println();
         System.out.println();
 }
+
 
 
 
